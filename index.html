@@ -5,42 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Split page</title>
 </head>
 <body>
 
     <!-- FIRST PAGE  -->
-    <div class="row no-gutters">
-
-        <div class="col-md-6 no-gutters">
-            <div class="leftside">
-                <a href="">Click on leftside</a>
-            </div>
-        </div>
-
-        <div class="col-md-6 no-gutters">
-            <div class="rightside">
-                Click on rightside
-            </div>
-        </div>
-
+    <div class="split">
+        
     </div>
+    <div class="split"></div>
 
-    <!-- Include jQuery for simplicity, you can use vanilla JavaScript if preferred -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-    <script>
-        $(document).ready(function() {
-            // Remove the Loading--hidden class to show the loader
-            $(".Loading").removeClass("Loading--hidden");
-
-            // Simulate some loading time (3 seconds in this example)
-            setTimeout(function() {
-                // Hide the loader after the simulated loading time
-                $(".Loading").addClass("Loading--hidden");
-            }, 3000);
-        });
-    </script>
 
 </body>
 </html>
