@@ -8,32 +8,39 @@
     <title>Document</title>
 </head>
 <body>
-    
 
+    <!-- FIRST PAGE  -->
+    <div class="row no-gutters">
 
-
-            <div class="row no-gutters">
-
-
-                            <div class="col-md-6 no-gutters">
-
-
-                                <div class="leftside">
-                                    Click on leftside
-
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-6 no-gutters">
-                                
-
-
-                                <div class="rightside">
-                                    Click on rightside
-
-                                </div>
-                                
-                            </div>
+        <div class="col-md-6 no-gutters">
+            <div class="leftside">
+                <a href="">Click on leftside</a>
             </div>
+        </div>
+
+        <div class="col-md-6 no-gutters">
+            <div class="rightside">
+                Click on rightside
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Include jQuery for simplicity, you can use vanilla JavaScript if preferred -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Remove the Loading--hidden class to show the loader
+            $(".Loading").removeClass("Loading--hidden");
+
+            // Simulate some loading time (3 seconds in this example)
+            setTimeout(function() {
+                // Hide the loader after the simulated loading time
+                $(".Loading").addClass("Loading--hidden");
+            }, 3000);
+        });
+    </script>
+
 </body>
 </html>
